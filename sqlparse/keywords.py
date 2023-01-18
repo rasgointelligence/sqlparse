@@ -46,6 +46,9 @@ SQL_REGEX = [
 
     (r'(@|##|#)[A-ZÀ-Ü]\w+', tokens.Name),
 
+    # fqtns with unquoted restricted chars (e.g. db-0001.schema.table)
+    (r'["`\-\w]+[\.:]["`\w]+\.["`\w]+', tokens.Name),
+    
     # see issue #39
     # Spaces around period `schema . name` are valid identifier
     # TODO: Spaces before period not implemented
