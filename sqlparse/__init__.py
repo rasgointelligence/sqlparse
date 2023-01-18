@@ -16,7 +16,7 @@ from sqlparse import filters
 from sqlparse import formatter
 
 
-__version__ = '0.4.4.rasgo'
+__version__ = '0.4.3.post0'
 __all__ = ['engine', 'filters', 'formatter', 'sql', 'tokens', 'cli']
 
 
